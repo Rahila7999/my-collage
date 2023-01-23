@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title>Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="abc">
+<section class="subheader">
+<nav>
+<a href="index.html"><img src="images/logo.jpeg"></a>
+<div class="nav-links" id="nav">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="courses.html">COURSES</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+<li><a href="team.html">OUR TEAM</a></li>
+</ul>
+</div>
+</nav>
+</section>
+<h1 style="text-align:center; font-size:75px; text-decoration:double underline"><strong>COLLAGE EVENT'S PHOTOS</strong></h1>
+<div class="full-img" id="fullImgBox">
+<img src="images/logo.jpeg" id="fullImg">
+<span onclick="closeFullImg()">X</span>
+</div>
+<div class="img-gallery">
+<img src="images/g7.jpeg" onclick="openFullImg(this.src)">
+<img src="images/ga.jpeg" onclick="openFullImg(this.src)">
+<img src="images/g10.jpeg" onclick="openFullImg(this.src)">
+<img src="images/g9.jpeg" onclick="openFullImg(this.src)">
+<img src="images/g8.jpeg" onclick="openFullImg(this.src)">
+<img src="images/g4.jpeg" onclick="openFullImg(this.src)">
+<img src="images/li.jpeg" onclick="openFullImg(this.src)">
+<img src="images/b2.png" onclick="openFullImg(this.src)">
+<img src="images/g1.jpeg" onclick="openFullImg(this.src)">
+<img src="images/3.jpeg" onclick="openFullImg(this.src)">
+<img src="images/a4.jpeg" onclick="openFullImg(this.src)">
+<img src="images/a.jpeg" onclick="openFullImg(this.src)">
+<img src="images/a1.jpeg" onclick="openFullImg(this.src)">
+<img src="images/a2.jpeg" onclick="openFullImg(this.src)">
+<img src="images/a3.jpeg" onclick="openFullImg(this.src)">
+<img src="images/g.jpeg" onclick="openFullImg(this.src)">
+</div>
+<script>
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+function openFullImg(pic){
+fullImgBox.style.display = "flex";
+fullImg.src=pic;
+}
+function closeFullImg(){
+fullImgBox.style.display="none";
+}
+</script>
+</body>
+
+</html>
